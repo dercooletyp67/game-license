@@ -1,0 +1,14 @@
+# Ignore everything by default — this git repo is ONLY for the license
+# revocation file that ships publicly. The Fiverr folder also contains the
+# full Unity project and local client records, which must NEVER be pushed
+# here (this repo is PUBLIC — the game itself fetches revoked.txt with no
+# authentication).
+*
+
+# Explicitly allow only what belongs in the public revocation repo
+!.gitignore
+!revoked.txt
+!README.md
+
+# keys_database.txt (client names/emails) stays LOCAL ONLY — never allowed
+# in this list, since this repo is public.
